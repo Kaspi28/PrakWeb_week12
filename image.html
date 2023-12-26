@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown Gambar</title>
+</head>
+<body>
+  <h1>Dropdown Gambar</h1>
+  <div id="container">
+    <select id="gambar">
+      <option value="caferacer_modip.jpg">Motor Caferacer</option>
+      <option value="coper_modip.jpg">Motor Coper</option>
+      <option value="mxold_modip.jpg">Motor MX</option>
+      <option value="nmax_modip.jpg">Motor NMax</option>
+      <option value="r6_modip.jpg">Motor R6</option>
+      <option value="vario_modip.jpg">Motor Vario</option>
+      <option value="world.jpg">Dunia</option>
+    </select>
+    <br><br>
+    <img id="gambar-container" src="" alt="">
+  </div>
+  <script src="script.js"></script>
+</body>
+<script>
+    function showImage(imageUrl) {
+        // Set image source
+        document.getElementById("gambar-container").src = imageUrl;
+      
+        // Show alert
+        alert("Nama file gambar: " + imageUrl);
+      }
+      
+      // Bind event listener to dropdown
+      document.getElementById("gambar").addEventListener("change", function() {
+        // Get selected image
+        var imageUrl = document.getElementById("gambar").value;
+      
+        // Show image
+        showImage(imageUrl);
+      });      
+</script>
+</html>
+
+</body>
+</html>
